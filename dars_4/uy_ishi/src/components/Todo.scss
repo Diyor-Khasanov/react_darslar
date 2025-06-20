@@ -1,0 +1,76 @@
+.todo {
+  max-width: 500px;
+  margin: 50px auto;
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  font-family: sans-serif;
+
+  h1 {
+    text-align: center;
+    color: #1d4ed8;
+  }
+
+  .input-area {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+
+    input {
+      flex: 1;
+      padding: 10px;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+      font-size: 16px;
+    }
+
+    button {
+      background: #1d4ed8;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      font-size: 16px;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: 0.3s;
+
+      &:hover {
+        background: #2563eb;
+      }
+    }
+  }
+
+  .list {
+    list-style: none;
+    padding: 0;
+
+    li {
+      display: flex;
+      justify-content: space-between;
+      padding: 10px;
+      margin-bottom: 10px;
+      background: #f1f5f9;
+      border-radius: 6px;
+      transition: 0.2s;
+
+      &.done span {
+        text-decoration: line-through;
+        opacity: 0.6;
+      }
+
+      span {
+        flex: 1;
+        cursor: pointer;
+      }
+
+      button {
+        background: none;
+        border: none;
+        color: red;
+        font-size: 18px;
+        cursor: pointer;
+      }
+    }
+  }
+}
